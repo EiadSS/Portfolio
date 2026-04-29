@@ -1,13 +1,3 @@
-<!-- HELLO
--
-DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
-Created by Anil Seervi.
--
-GitHub repo: https://github.com/AnilSeervi/DevFolio
-README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
--
-Have fun creating your portfolio on this template!!! -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,332 +5,389 @@ Have fun creating your portfolio on this template!!! -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-  <!-- Title: add your Portfolio websites's title here -->
-  <title>Eiad Sayed Suliman | Engineer</title>
+  <title>Eiad Sayed Suliman | Software Engineer</title>
+  <meta name="keywords" content="Eiad Sayed Suliman, Software Engineer, Software Developer, C#, .NET, React, Full Stack Developer, Backend Developer" />
+  <meta name="description" content="Portfolio of Eiad Sayed Suliman, a software developer focused on full-stack development, C#/.NET services, React applications, backend systems, and developer tools." />
+  <meta name="theme-color" content="#0f172a" />
 
-  <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-  <meta name="keywords" content="EiadSS, Eiad, skill" />
-
-  <!-- Improve your SEO by adding a small descrption of you -->
-  <meta name="description" content="Eiad Sayed Suliman | Engineer" />
-
-  <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-  <link rel="icon" type="image/png" href="./assets/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" />
-
-  <!-- Add your primary-theme color for the value of content -->
-  <meta name="theme-color" content="#36d1dc" />
-
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <!-- Fill content with the URL of this portfolio you'll host -->
-  <meta property="og:url" content="https://devfolio.js.org/" />
-  <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-  <meta property="og:title" content="Eiad Sayed Suliman | Developer" />
-  <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-  <meta property="og:description" content="Made using DevFolio Template" />
-  <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
-      so that a thumbnail image of your portfolio is shown while shared on other platform -->
-  <meta property="og:image" content="https://devfolio.js.org/assets/devfolio.png" />
+  <meta property="og:title" content="Eiad Sayed Suliman | Software Engineer" />
+  <meta property="og:description" content="Full-stack software developer focused on C#/.NET, React, backend systems, and production-style developer tooling." />
+  <meta property="og:image" content="./assets/devfolio.png" />
 
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <!-- Again fill content attr with the URL of this portfolio you'll host -->
-  <meta property="twitter:url" content="https://devfolio.js.org" />
-  <!-- Recommended to use the same text used within <title> element -->
-  <meta property="twitter:title" content="[Your name here] | Developer" />
-  <!-- short description that shows up while your portfolio is shared -->
-  <meta property="twitter:description" content="Made using DevFolio Template" />
-  <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-  <meta property="twitter:image" content="https://anilseervi.vercel.app/assets/devfolio.png" />
+  <meta property="twitter:title" content="Eiad Sayed Suliman | Software Engineer" />
+  <meta property="twitter:description" content="Full-stack software developer focused on C#/.NET, React, backend systems, and production-style developer tooling." />
+  <meta property="twitter:image" content="./assets/devfolio.png" />
 
-  <!-- link tags -->
-  <link rel="preload" as="style" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-
-  <!-- FontAwesome Icons link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script defer src="./javascript/scrollreveal.min.js"></script>
-  <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
-
-  <!-- Remove Google Analytics once you have your portfolio website set-up -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag("js", new Date())
-
-    gtag("config", "UA-122228201-4")
-  </script>
-  <!-- End of Google Analytics -->
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-  <!-- Hero Section -->
-  <div id="hero">
-    <section class="container">
-      <h1 class="hero-title">
-        Hi, my name is <span class="text-color-main name">Eiad Sayed Suliman</span>
-        <br />
-        Software Engineer
-      </h1>
+  <div class="page-shell">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="grid-overlay"></div>
 
-    </section>
-    <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-      <div class="scroll-down"></div>
-    </a>
-  </div>
-  <!-- /END Hero Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="row about-wrapper">
-        <div class="about-wrapper__image">
-          <img class="img-fluid"
-            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Profile Image" />
-        </div>
-        <div class="about-wrapper__info">
-          <p class="about-wrapper__info-text">
-            Welcome to my portfolio! I am Eiad Sayed Suliman, a third year
-            student studying at York university in computer science. In My portfolio
-            you will find a selection of projects that highlight my experience and
-            show off my software skills and original problem-solving.
-            Every project, from the start to deployment, demonstrates my dedication to
-            giving excellent software solutions. Not only is software engineering my career, but it's also my
-            passion, inspiring me to constantly research, develop, and provide solutions that have an impact.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /END About Section -->
-
-  <!--Projects Section-->
-  <section id="projects">
-    <div class="container">
-      <div class="project-wrapper">
-        <h2 class="section-title dark-blue-text">Projects</h2>
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">E-commerce Store</h3>
-            <p class="project-wrapper__text-info">
-              Enjoy smooth browsing, simple navigation, and safe transactions while browsing a wide range of fashionable
-              apparel options.
-              Using React and Chakra UI to create user-friendly interfaces and Java and Spring Boot for strong backend
-              functionality.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="https://ecommerce-clothing-store-alpha.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a>
-              <a href="https://github.com/EiadSS/Ecommerce-Clothing-Store" target="_blank"
-                class="cta-btn text-color-main">Source Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="https://ecommerce-clothing-store-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="img-fluid" alt="Project Image" width="1366" height="767" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">TransferMarket Scrapper</h3>
-            <p class="project-wrapper__text-info">
-              A dynamic platform that allows football fans to easily research their favorite players with the help of
-              React, Django, and Selenium. This project is the place to go if you're looking for reliable and current
-              player information, whether you're a scout, fantasy football manager, or just a fan.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="https://transfer-market-scrap.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a>
-              <a href="https://github.com/EiadSS/TransferMarketScrap" target="_blank"
-                class="cta-btn text-color-main">Source Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="https://transfer-market-scrap.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1593&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="img-fluid" alt="Project Image" width="1366" height="767" />
-              </div>
-            </a>
-          </div>
-        </article>
-
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">University Of Toronto Software Engineering Club Website</h3>
-            <p class="project-wrapper__text-info">
-              A platform for software engineeringers or anyone with a passion for developing software at the University Of Tornto 
-              to share their projects, resume, and host events. Providing students all aroud the school a great learning and social enviroment
-              to learn off one another. Deveolped with TypeScript React, and Flask Python.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="https://site.usec.club/home" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live</a>
-              <a target="_blank" class="cta-btn text-color-main">Source Code N/A</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="https://site.usec.club/home" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c29mdHdhcmV8ZW58MHx8MHx8fDA%3D"
-                  class="img-fluid" alt="Project Image" width="1366" height="767" />
-              </div>
-            </a>
-          </div>
-        </article>
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Tetris</h3>
-            <p class="project-wrapper__text-info">
-              Relive the classic block-stacking game, providing endless hours of fun, which is entirely created in Java. 
-              This project offers infinite fun and nostalgia, regardless of your level of Tetris experience. 
-              In this classic game, you'll need to put your reflexes and smart thinking to the test as you try to clear lines.
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a href="https://github.com/EiadSS/Tetris-Java" target="_blank" class="cta-btn text-color-main">Source Code</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="https://github.com/EiadSS/Tetris-Java" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img
-                  src="https://play-lh.googleusercontent.com/ILMYT7PYDpF1771O6lixyX01a3JEGYKotMshaq6rFFxQnZPGb_byVbfgMZRJlG4pITJPfqoUC0g=w1296-h2160-rw"
-                  class="img-fluid" alt="Project Image" width="1366" height="767" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-
-        <!-- Each .row is a project -->
-        <article class="row">
-          <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Power Point To Flash Cards (In Progress)</h3>
-            <p class="project-wrapper__text-info">
-              Love flash cards but hate making them? Why not use this application to generate flash cards from any powerpoint file! 
-              With the use of modern technology and AI, simply upload your file and let the applicaiton work for you, generating the best questions and answers for each card. 
-            </p>
-            <div class="project-wrapper__text-btns">
-              <a target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
-                Live N/A</a>
-              <a target="_blank" class="cta-btn text-color-main">Source Code N/A</a>
-            </div>
-          </div>
-
-          <div class="project-wrapper__image">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="thumbnail rounded">
-                <img
-                  src="https://images.unsplash.com/photo-1616628188859-7a11abb6fcc9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="img-fluid" alt="Project Image" width="1366" height="767" />
-              </div>
-            </a>
-          </div>
-        </article>
-        <!-- /END Project -->
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">Experince</h2>
-      <div class="row about-wrapper">
-        <div class="about-wrapper__image">
-          <img class="img-fluid" alt="Profile Image" width="500" height="250"
-            src="assets/scott-graham-5fNmWej4tAA-unsplash.jpg" />
-        </div>
-        <div class="about-wrapper__info">
-          <p class="about-wrapper__info-text">
-            Math Tutor | Beyond The Classroom & Tutorax:
-          </p>
-          <p class="about-wrapper__info-text">
-            •	Experinced math and computer science teacher, tutoring for over 2 years, teaching students from grades 6 - university 
-          </p>
-          <p class="about-wrapper__info-text">
-            •	Deduce a plan of action that best supports students, leading to a better learning experience
-          </p>
-          <p class="about-wrapper__info-text">
-            •	Explained core math concepts resulting on average a 20-30 percent increase in students grade
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Stack</h2>
-      <div class="contact-wrapper">
-        <p class="contact-wrapper__text">Java, Python, JavaScript, TypeScript, C, HTML/CSS</p>
-        <p class="contact-wrapper__text">Spring Boot, Django, Flask, React, Node, MySQL, MongoDB</p>
-      </div>
-    </div>
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-wrapper">
-        <p class="contact-wrapper__text">eiads.sulaiman@gmail.com</p>
-      </div>
-    </div>
-  </section>
-  <!-- END Contact Section -->
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="container">
-      <a href="#hero" class="back-to-top" aria-label="go back to top">
-        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="Go to home">
+        <span class="brand-mark">ES</span>
+        <span>Eiad Sayed Suliman</span>
       </a>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/eiad-sayed-suliman/" target="_blank" rel="noopener noreferrer"
-          aria-label="linkedin">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/EiadSS" target="_blank" rel="noopener noreferrer" aria-label="github">
-          <i class="fa-brands fa-github"></i>
-        </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section-pad">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Software Developer · Full-Stack · Backend Systems</p>
+            <h1>Building scalable web apps, backend services, and developer tools.</h1>
+            <p class="hero-subtitle">
+              I’m a Computer Science student at York University with software development experience across
+              <strong>C#/.NET services</strong>, <strong>React UIs</strong>, <strong>SQL-backed systems</strong>, and
+              production-style developer tooling.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View Projects</a>
+              <a class="button button-secondary" href="https://github.com/EiadSS" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/eiad-sayed-suliman/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal" aria-label="Portfolio highlights">
+            <div class="status-pill">
+              <span class="pulse"></span>
+              Open to Software Developer / Full-Stack roles
+            </div>
+            <div class="profile-card">
+              <div class="profile-topline">
+                <div>
+                  <p class="muted">Core focus</p>
+                  <h2>C#/.NET · React · Backend Systems</h2>
+                </div>
+                <div class="avatar">ES</div>
+              </div>
+              <p>
+                I like building software that is functional, maintainable, scalable, and easy for teams to ship.
+              </p>
+              <div class="metric-grid">
+                <div>
+                  <strong>200+</strong>
+                  <span>workflows supported</span>
+                </div>
+                <div>
+                  <strong>40%</strong>
+                  <span>less maintenance</span>
+                </div>
+                <div>
+                  <strong>6.9k+</strong>
+                  <span>customer orgs supported</span>
+                </div>
+                <div>
+                  <strong>&lt;10m</strong>
+                  <span>AI suite setup</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section-pad compact-section">
+        <div class="container split-section reveal">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2 class="section-title">I turn product requirements into clean, working software.</h2>
+          </div>
+          <div class="section-text">
+            <p>
+              My strongest experience is in full-stack software development: building C#/.NET-backed workflows,
+              React interfaces, SQL-backed logic, API-driven tooling, and maintainable product features. I also build personal
+              projects that combine backend systems, background workers, CI, and modern frontend design.
+            </p>
+            <p>
+              Currently finishing my H.B.Sc. in Computer Science at York University, with coursework in data structures,
+              object-oriented programming, software design, and databases.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section-pad">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Experience</p>
+            <h2 class="section-title">Production experience building software used at scale.</h2>
+          </div>
+
+          <div class="timeline reveal">
+            <article class="timeline-card featured-card">
+              <div class="timeline-date">Sep 2024 — Aug 2025</div>
+              <div class="timeline-content">
+                <div class="card-heading-row">
+                  <div>
+                    <h3>Software Developer Intern</h3>
+                    <p>Dayforce · Toronto, Canada</p>
+                  </div>
+                  <span class="chip strong-chip">Integration Studio</span>
+                </div>
+                <ul class="impact-list">
+                  <li>Engineered and maintained Integration Studio workflows across React UI and C#/.NET services for a product used by 6.9k+ customer organizations.</li>
+                  <li>Built reusable C# workflow infrastructure with Selenium and SpecFlow across 10 modules and 200+ product flows, improving reliability and development feedback.</li>
+                  <li>Integrated SQL-backed data checks into product workflows to verify backend state, cutting debugging time by 30% in data-dependent scenarios.</li>
+                  <li>Implemented an API-driven configuration subsystem using async/await and environment JSON mappings, reducing false failures and maintenance by about 40%.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-card">
+              <div class="timeline-date">2022 — Present</div>
+              <div class="timeline-content">
+                <div class="card-heading-row">
+                  <div>
+                    <h3>Math & Computer Science Tutor</h3>
+                    <p>Beyond The Classroom & Tutorax</p>
+                  </div>
+                  <span class="chip">Teaching</span>
+                </div>
+                <ul class="impact-list">
+                  <li>Tutored students from grades 6 through university in math, programming, problem solving, and exam preparation.</li>
+                  <li>Built individualized learning plans that helped students understand difficult concepts and improve confidence.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-pad projects-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Projects</p>
+            <h2 class="section-title">Featured builds that show full-stack, backend, and systems depth.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card-large reveal">
+              <div class="project-visual automation-visual">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <span class="chip strong-chip">AI Developer Tool</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3>AI Test Automation Copilot</h3>
+                <p>
+                  Full-stack developer tool that ingests PRDs/OpenAPI specs, embeds requirements into Postgres pgvector, retrieves context with RAG, generates structured JSON plans, and outputs runnable Playwright API suites.
+                </p>
+                <div class="tag-row">
+                  <span>FastAPI</span><span>Postgres + pgvector</span><span>Celery</span><span>Redis</span><span>Playwright TS</span><span>Docker</span><span>GitHub Actions</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/EiadSS/ai-test-copilot" target="_blank" rel="noopener noreferrer">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card-large reveal">
+              <div class="project-visual price-visual">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <span class="chip strong-chip">Full-Stack</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3>Price Drop & Restock Alert Platform</h3>
+                <p>
+                  Consumer-facing product tracker with JWT authentication, alert preferences, background monitoring workers, PostgreSQL persistence, Redis-backed infrastructure, and price-drop/restock notification flows.
+                </p>
+                <div class="tag-row">
+                  <span>C#</span><span>.NET 10</span><span>ASP.NET Core</span><span>EF Core</span><span>PostgreSQL</span><span>Redis</span><span>React</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/EiadSS/price-tracker" target="_blank" rel="noopener noreferrer">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image football-image"></div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <span class="chip">Data Platform</span>
+                </div>
+                <h3>TransferMarket Scraper</h3>
+                <p>
+                  Football data platform with Selenium scraping, pandas transformations, Django API endpoints, React search UI, backend caching, and 850k+ player records accessible through the app.
+                </p>
+                <div class="tag-row">
+                  <span>Python</span><span>Selenium</span><span>pandas</span><span>Django</span><span>React</span><span>Vercel</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/EiadSS/TransferMarketScrap" target="_blank" rel="noopener noreferrer">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image ecommerce-image"></div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <span class="chip">Web App</span>
+                </div>
+                <h3>E-Commerce Store</h3>
+                <p>
+                  Clothing storefront with a React frontend and Java/Spring Boot backend, built around product browsing, customer flows, authentication, and inventory-oriented API design.
+                </p>
+                <div class="tag-row">
+                  <span>React</span><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>REST APIs</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/EiadSS/Ecommerce-Clothing-Store" target="_blank" rel="noopener noreferrer">Source</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image club-image"></div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <span class="chip">Team Project</span>
+                </div>
+                <h3>University of Toronto Software Engineering Club Website</h3>
+                <p>
+                  Club platform for events, projects, and student engagement. Contributed to React/TypeScript frontend work, Flask API features, code reviews, and production-facing improvements.
+                </p>
+                <div class="tag-row">
+                  <span>TypeScript</span><span>React</span><span>Flask</span><span>Python</span><span>Code Review</span>
+                </div>
+                
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-image flashcard-image"></div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <span class="chip">AI Study Tool</span>
+                </div>
+                <h3>PowerPoint to Flashcards</h3>
+                <p>
+                  AI-assisted study tool concept that converts slide content into flashcards, focused on reducing manual study prep and improving review speed.
+                </p>
+                <div class="tag-row">
+                  <span>AI</span><span>Study Tools</span><span>File Processing</span><span>Question Generation</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-pad compact-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Stack</p>
+            <h2 class="section-title">Tools I use to build and ship software.</h2>
+          </div>
+
+          <div class="skills-layout reveal">
+            <article class="skill-card">
+              <h3>Languages</h3>
+              <div class="tag-row large-tags">
+                <span>C#</span><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>Java</span><span>SQL</span><span>C</span><span>HTML/CSS</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Frameworks & Backend</h3>
+              <div class="tag-row large-tags">
+                <span>.NET</span><span>ASP.NET Core</span><span>FastAPI</span><span>Django</span><span>Flask</span><span>Spring Boot</span><span>EF Core</span><span>Node.js</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <div class="tag-row large-tags">
+                <span>React</span><span>Tailwind CSS</span><span>Responsive UI</span><span>React Router</span><span>NextUI</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Data, DevOps & Quality Engineering</h3>
+              <div class="tag-row large-tags">
+                <span>Selenium</span><span>SpecFlow</span><span>Playwright</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>GitHub Actions</span><span>Postman</span><span>Jira</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-pad contact-section">
+        <div class="container contact-card reveal">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 class="section-title">Want to build something useful together?</h2>
+            <p class="section-text contact-text">
+              I’m interested in software engineering, full-stack, backend, and developer experience roles where I can work on real systems and make shipping easier.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:eiads.sulaiman@gmail.com">eiads.sulaiman@gmail.com</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/eiad-sayed-suliman/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button button-secondary" href="https://github.com/EiadSS" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Eiad Sayed Suliman.</p>
+        <a href="#hero">Back to top <i class="fa-solid fa-arrow-up"></i></a>
       </div>
-    </div>
-  </footer>
-  <!-- END Footer Section -->
+    </footer>
+  </div>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear()
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const header = document.querySelector(".site-header");
+    const revealItems = document.querySelectorAll(".reveal");
+
+    window.addEventListener("scroll", () => {
+      header.classList.toggle("is-scrolled", window.scrollY > 12);
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item) => observer.observe(item));
   </script>
-  <script src="./javascript/vanilla-tilt.min.js"></script>
-  <script type="text/javascript" src="./javascript/valtilt.js"></script>
 </body>
 
 </html>
