@@ -32,7 +32,13 @@ html {
 body {
   min-height: 100vh;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 8% 14%, rgba(56, 189, 248, 0.16), transparent 28%),
+    radial-gradient(circle at 92% 44%, rgba(167, 139, 250, 0.12), transparent 30%),
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    var(--bg);
+  background-size: auto, auto, 72px 72px, 72px 72px, auto;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
@@ -67,20 +73,6 @@ strong {
   overflow: hidden;
 }
 
-.grid-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: -3;
-  pointer-events: none;
-  background:
-    linear-gradient(rgba(148, 163, 184, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.055) 1px, transparent 1px),
-    radial-gradient(circle at 8% 18%, rgba(56, 189, 248, 0.2), transparent 32%),
-    radial-gradient(circle at 92% 48%, rgba(167, 139, 250, 0.16), transparent 30%),
-    var(--bg);
-  background-size: 60px 60px, 60px 60px, auto, auto, auto;
-}
-
 .container {
   width: min(100% - 40px, var(--container));
   margin: 0 auto;
@@ -88,6 +80,12 @@ strong {
 
 .section-pad {
   padding: 110px 0;
+}
+
+.section-pad:not(.hero),
+.compact-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 760px;
 }
 
 .compact-section {
@@ -108,7 +106,6 @@ strong {
   border-radius: 999px;
   background: rgba(2, 6, 23, 0.78);
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(8px);
   transform: translateX(-50%);
   transition: border-color 220ms ease, background 220ms ease;
 }
@@ -327,8 +324,6 @@ strong {
   height: 10px;
   border-radius: 50%;
   background: #22c55e;
-  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.75);
-  animation: pulse 1.8s infinite;
 }
 
 .profile-card,
@@ -339,6 +334,7 @@ strong {
   border: 1px solid var(--line);
   background: linear-gradient(145deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.82));
   box-shadow: var(--shadow);
+  contain: layout paint;
 }
 
 .profile-card {
@@ -542,7 +538,7 @@ strong {
 
 .project-card:hover {
   border-color: rgba(56, 189, 248, 0.44);
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
   transform: translateY(-6px);
 }
 
@@ -653,7 +649,7 @@ strong {
   border-radius: 38px;
   color: #eff6ff;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 16px 42px rgba(0, 0, 0, 0.26);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 10px 24px rgba(0, 0, 0, 0.22);
   font-size: 3.3rem;
 }
 
@@ -790,23 +786,13 @@ strong {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 650ms ease, transform 650ms ease;
+  opacity: 1;
+  transform: none;
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-@keyframes pulse {
-  70% {
-    box-shadow: 0 0 0 12px rgba(34, 197, 94, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
